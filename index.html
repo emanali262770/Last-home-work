@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <title>NavBar</title>
+</head>
+<body>
+  <nav>
+<div class="hamburger_item">
+  <i class="fa-solid fa-bars"></i>
+</div>
+<div class="logo">
+  <img src="bird-colorful-logo-gradient-vector_343694-1365.webp" alt="">
+</div>
+<div class="search">
+  <input type="text" placeholder="Search">
+</div>
+  </nav>
+  <div class="side_bar">
+    <div class="icon">
+      <a href=""><i class="fa-solid fa-house"></i> Home</a>
+      <a href=""><i class="fa-solid fa-bullseye"></i> Issue</a>
+      <a href=""><i class="fa-solid fa-code-pull-request"></i> Pull request</a>
+      <a href=""><i class="fa-solid fa-diagram-project"></i> Project</a>
+      <a href=""><i class="fa-solid fa-people-arrows"></i> Discussion</a>
+      <a href=""><i class="fa-solid fa-code"></i> code space</a>
+      <a href=""><i class="fa-solid fa-microscope"></i> Explore</a>
+      <a href=""><i class="fa-solid fa-shop-lock"></i> Marketspace</a>
+    </div>
+  </div>
+</body>
+<script>
+  let hamburger=document.querySelector('.fa-bars');
+  let sidebar=document.querySelector('.side_bar')
+  hamburger.addEventListener('click',()=>{
+    sidebar.classList.toggle('active')
+   
+  })
+</script>
+</html>
